@@ -1,0 +1,53 @@
+(Q1)
+1: Uniformly distributed with respect to Area
+In this model, probability is proportional to area.
+
+Total "Size" (Area of Disk): pi*(10)^2=100pi.
+"Size" of Event A (Area of the outer ring): To find the area of the ring between radius 9
+and 10, we subtract the inner circle from the outer circle: 100pi - 81pi = 19pi.
+P(A):Area of A\Total Area =19pi\100pi} = 19\100.  
+
+2: Uniformly distributed with respect to Radius
+In this model, we ignore area and assume we are choosing a distance (r) from the center and a direction independently.  
+Total "Size" (Length of Radius): The possible distances are from 0 to 10. Total length = 10.
+"Size" of Event A (Target interval): The event occurs if the distance r is between 9 and 10. This length is 10-9 = 1.
+P(A):Length of A\Total Length = 1\10
+
+3:The difference arises because a verbal description like "at random" does not automatically define a unique mathematical model.
+In the area-uniform model, points farther from the center are more likely because they occupy more space.
+In the radius-uniform model, a thin ring near the center is just as likely as a thin ring near the edge, even though the edge ring is much larger in area.
+
+
+(Q2)
+In measure-theoretic probability, Bertrand's Paradox is a classic problem that demonstrates how the term "at random" is ill-defined unless we specify the Probability Measure ($P$) being used.
+In a circle of radius R, the side length of an inscribed equilateral triangle is sqrt{3}R. A chord is longer than this side if and only if its midpoint is closer to the center than R/2.
+1: Random Endpoints (Uniform Angle)
+In this model, we choose two points on the circumference independently and uniformly.
+The Experiment: Fix one point as a vertex of the triangle. To make the chord longer than the side, the second point must fall on the arc between the other two vertices.
+The Measure: The probability is based on the arc length of the circumference 2*pi*R.
+The Calculation: The equilateral triangle divides the 360degree circle into three 120degree arcs. The "success" region is exactly one of these arcs.
+Answer: P(A) = 120degree/360degree = 1/3
+
+2: Random Radial Position (Uniform Radius)
+In this model, we choose a random radius and then pick a random point on that radius to be the midpoint of the chord.
+The Measure: The probability is based on the linear Lebesgue measure (length) along the radius.
+The Calculation: Geometry tells us that for a chord to be longer than the triangle's side, its distance from the center $d$ must be less than R/2.
+Answer: P(A) = R/2*R = 1/2
+
+3: Random Midpoint (Uniform Area)
+In this model, we choose a point "at random" anywhere inside the disk and let that point be the midpoint of our chord.
+The Experiment: Choose a point (x, y) such that x^2 + y^2<=R^2.
+The Measure: The probability is based on the Area measure (2D Lebesgue measure).
+The Calculation: For the chord to be longer than sqrt{3}/R, the chosen midpoint must fall inside a smaller concentric circle of radius R/2.
+The Ratio: P(A) =mArea of inner circle/Area of outer circle = pi(R/2)^2/pi*R^2} = \frac{1/4 \pi R^2}{\pi R^2} = \mathbf{1/4}$
+
+
+
+
+
+
+
+
+
+
+
