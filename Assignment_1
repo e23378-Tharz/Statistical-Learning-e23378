@@ -39,7 +39,7 @@ In this model, we choose a point "at random" anywhere inside the disk and let th
 The Experiment: Choose a point (x, y) such that x^2 + y^2<=R^2.
 The Measure: The probability is based on the Area measure (2D Lebesgue measure).
 The Calculation: For the chord to be longer than sqrt{3}/R, the chosen midpoint must fall inside a smaller concentric circle of radius R/2.
-The Ratio: P(A) =mArea of inner circle/Area of outer circle = pi(R/2)^2/pi*R^2} = 1/4pi R^2pi R^2} = 1/4
+The Ratio: P(A) =mArea of inner circle/Area of outer circle = pi(R/2)^2/pi*R^2} = 1/4pi R^2pi R^2 = 1/4
 
 
 
